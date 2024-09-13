@@ -10,15 +10,31 @@ class Menu:
 
         def mostrarMenu(self):
             print('\n---- MENU ----\n\n' +
-                  'Escolha uma das opções abaixo: ' +
-                  '\n0. Sair'                       +
-                  '\n1. Somar'                      +
-                  '\n2. Subtrair'                   +
-                  '\n3. Dividir'                    +
-                  '\n4. Multiplicar'                +
-                  '\n5. Potência'                   +
-                  '\n6. Raiz'                       +
-                  '\n7. Tabuada')
+                  'Escolha uma das opções abaixo: '  +
+                  '\n0. Sair'                        +
+                  '\n1. Somar'                       +
+                  '\n2. Subtrair'                    +
+                  '\n3. Dividir'                     +
+                  '\n4. Multiplicar'                 +
+                  '\n5. Potência'                    +
+                  '\n6. Raiz'                        +
+                  '\n7. Tabuada'                     +
+                  '\n8. Exercício 1'                 +
+                  '\n9. Exercício 2'                 +
+                  '\n10. Exercício 3'                +
+                  '\n11. Exercício 4'                +
+                  '\n12. Exercício 5'                +
+                  '\n13. Exercício 6'                +
+                  '\n14. Exercício 7'                +
+                  '\n15. Exercício 8'                +
+                  '\n16. Exercício 9'                +
+                  '\n17. Exercício 10'               +
+                  '\n18. Exercício 11'               +
+                  '\n19. Exercício 12'               +
+                  '\n20. Exercício 13'               +
+                  '\n21. Exercício 14'               +
+                  '\n22. Exercício 15'
+                  )
 
         def coletar(self):
             num1 = int(input('Informe o primeiro número'))
@@ -53,3 +69,58 @@ class Menu:
                     self.coletar()
                     print(f'A tabuada de {self.num1} é: {self.opera.tabuada(self.num1)}')
                     print(f'A tabuada de {self.num2} é: {self.opera.tabuada(self.num2)}')
+
+                elif self.opcao == 8:
+                    self.coletar()
+                    print(f'Os números são: {self.opera.exercicio1(self.num)}')
+
+                elif (self.opcao == 8):
+                    print(self.exer.exercicio01())
+
+                elif (self.opcao == 9):
+                    print(self.exer.exercicio02())
+
+                elif (self.opcao == 10):
+                    print(self.exer.exercicio03())
+
+                elif (self.opcao == 11):
+                    print(self.exer.exercicio04())
+
+                elif self.opcao == 12:
+                    num = int(input('Informe um número: '))
+                    print(f'O número é: {self.exer.exercicio05(num)}')
+
+                elif self.opcao == 13:
+                    num = int(input('Informe um número: '))
+                    print(f'O número é: {self.exer.exercicio06(num)}')
+
+                elif self.opcao == 14:
+                    num = int(input('Informe um número: '))
+                    print(f'A tabuada de {num} é: {self.exer.exercicio07(num)}')
+
+                elif self.opcao == 17:
+                    num = int(input('Informe um número'))
+                    print(self.exer.exercicio08(num))
+
+                elif self.opcao == 18:
+                    num = int(input('Informe um número'))
+                    print(self.exer.exercicio09(num))
+
+                elif self.opcao == 19:
+                    print(self.exer.exercicio10())
+
+                elif self.opcao == 20:
+                    num = int(input("Informe um número: "))
+                    print(self.exer.exercicio11(num))
+
+                elif self.opcao == 21:
+                    num = int(input('Informe um número'))
+                    print(self.exer.exercicio12(num))
+
+                elif self.opcao == 22:
+                    num = int(input('Informe um número'))
+                    print(self.exer.exercicio13(num))
+
+                else:
+                    print("Codigo escolhido não é valído!")
+
