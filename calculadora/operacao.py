@@ -164,5 +164,70 @@ class Operacao:
         else:
             return f'O número {resposta - self.num} não é um número perfeito'
 
+    def exercicio21(self):
+        a = 10
+        b = 20
+        x = b
+        a = b
+        b = x
+        return f'O número 10 agora é {b} e o número 20 agora é {a}'
+
+    def exercicio22(self):
+        num = int(input('Informe um número: '))
+        num -= 1
+        return f'O número anterior ao número digitado é {num}'
+
+    def exercicio23(self):
+        base = self.num = int(input('Informe a base: '))
+        altura = self.num = int(input('Informe a altura: '))
+
+        area = base * altura
+
+        return f'A área do retângulo é: {area}'
+
+    def exercicio24(self):
+        ano = self.num = int(input('Informe o ano do seu nascimento: '))
+        mes = self.num = int(input('Informe o mês do seu nascimento: '))
+        dia = self.num = int(input('Informe o dia do seu nascimento: '))
+
+        if mes < 1 or mes > 13:
+            return f'Erro! Informe um número maior que zero e/ou menor que 12'
+        mes = mes * 30
+        ano = ano * 365
+        dia = dia + mes + ano
+        return f'A sua idade expressa em dias é {dia}'
+
+    def exercicio25(self):
+        eleitor = self.num = int(input('Informe o total de eleitores: '))
+        branco = self.num = int(input('Informe o total de votos brancos: '))
+        nulo = self.num = int(input('Informe o total de votos nulos: '))
+        valido = self.num = int(input('Informe o total de votos válidos: '))
+
+        percentualBranco = branco/eleitor * 100
+        percentualNulo = nulo/eleitor * 100
+        percentualValido = valido/eleitor * 100
+
+        return f'O número total de votos brancos representa {percentualBranco} do número total de eleitores: {eleitor}.' \
+               f'O número total de votos nulos representa {percentualNulo} do número total de eleitores: {eleitor}' \
+               f'O número total de votos válidos representa {percentualValido} do número total de eleitores: {eleitor}'
+
+    def exercicio26(self):
+        salarioAntigo =  self.num = int(input('Informe o salário atual: '))
+        percentualReajuste = self.num = int(input('Informe o percentual de reajuste: '))
+
+        salarioNovo = salarioAntigo / percentualReajuste * percentualReajuste
+
+        return f'O novo salário é {salarioNovo}'
+
+
+
+
+
+
+
+
+
+
+
 
 
