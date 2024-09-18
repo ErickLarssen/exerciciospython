@@ -1,6 +1,4 @@
-from menu import Menu
-# Executa as transações entre classes
-
+from menu import Menu #Conectar a main a classe
 if __name__ == '__main__':
     men = Menu()
-    men.execucao()
+    men.operacao()
