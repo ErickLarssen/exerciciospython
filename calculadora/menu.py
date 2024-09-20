@@ -44,7 +44,8 @@ class Menu:
                   '\n31 Exercício 24' +
                   '\n32 Exercício 25' +
                   '\n33 Exercício 26' +
-                  '\n34 Exercício 27')
+                  '\n34 Exercício 27' +
+                  '\n35 Exercício 28')
 
         def coletar(self):
             self.num1 = int(input("Informe o primeiro número: "))
@@ -187,8 +188,9 @@ class Menu:
                     print(self.exer.exercicio22(num))
 
                 elif self.opcao == 30:
-                    num = int(input('Informe um número'))
-                    print(self.exer.exercicio23(num))
+                    altura = int(input("Informe a altura do retângulo: "))
+                    base = int(input("Informe a base do retângulo: "))
+                    print(self.exer.exercicio23(base, altura))
 
                 elif self.opcao == 31:
                     num = int(input('Informe um número'))
@@ -205,6 +207,10 @@ class Menu:
                 elif self.opcao == 34:
                     num = int(input('Informe um número'))
                     print(self.exer.exercicio27(num))
+
+                elif self.opcao == 35:
+                    num = int(input('Informe um numero'))
+                    print(self.exer.exercicio28(num))
 
                 else:
 

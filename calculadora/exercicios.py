@@ -185,7 +185,7 @@ class Exercicios:
                 impar += i
         return f'Os pares são: {par} e os impares são: {impar}'
 
-    def exercicio20(self):
+    def exercicio20(self, num):
         resposta = ""
         self.num = int(input('Informe um número: '))
         for i in range(1, self.num,1):
@@ -196,7 +196,7 @@ class Exercicios:
         else:
             return f'O número {resposta - self.num} não é um número perfeito'
 
-    def exercicio21(self):
+    def exercicio21(self, a, b, c, x):
         a = 10
         b = 20
         x = b
@@ -204,20 +204,16 @@ class Exercicios:
         b = x
         return f'O número 10 agora é {b} e o número 20 agora é {a}'
 
-    def exercicio22(self):
+    def exercicio22(self, num):
         num = int(input('Informe um número: '))
         num -= 1
         return f'O número anterior ao número digitado é {num}'
 
-    def exercicio23(self):
-        base = self.num = int(input('Informe a base: '))
-        altura = self.num = int(input('Informe a altura: '))
+    def exercicio23(self, base, altura):
+        retangulo = base * altura
+        return f'A area do retângulo é: {retangulo}'
 
-        area = base * altura
-
-        return f'A área do retângulo é: {area}'
-
-    def exercicio24(self):
+    def exercicio24(self, ano, mes, dia):
         ano = self.num = int(input('Informe o ano do seu nascimento: '))
         mes = self.num = int(input('Informe o mês do seu nascimento: '))
         dia = self.num = int(input('Informe o dia do seu nascimento: '))
@@ -229,7 +225,7 @@ class Exercicios:
         dia = dia + mes + ano
         return f'A sua idade expressa em dias é {dia}'
 
-    def exercicio25(self):
+    def exercicio25(self, eleitor, branco, nulo, valido, percentualBranco, percentualNulo, percentualValido):
         eleitor = self.num = int(input('Informe o total de eleitores: '))
         branco = self.num = int(input('Informe o total de votos brancos: '))
         nulo = self.num = int(input('Informe o total de votos nulos: '))
@@ -243,7 +239,7 @@ class Exercicios:
                f'O número total de votos nulos representa {percentualNulo} do número total de eleitores: {eleitor}' \
                f'O número total de votos válidos representa {percentualValido} do número total de eleitores: {eleitor}'
 
-    def exercicio26(self):
+    def exercicio26(self, salarioAtual, percentualReajuste, reajuste, novoSalario):
         salarioAtual = int(input("Digite o salário atual do funcionário: R$ "))
         percentualReajuste = int(input("Digite o percentual de reajuste (%): "))
 
@@ -260,6 +256,17 @@ class Exercicios:
         total = fabrica + imposto + porc
 
         return f'O preço final do seu veiculo é de {total}'
+
+    def exercicio28(self, a, b, c, media):
+        a = int(input("Digite a primeira nota: "))
+        b = int(input("Digite a segunda nota: "))
+        c = int(input("Digite a terceira nota: "))
+
+        media = a + b + c / 3
+
+        return f'A média final é: {media}'
+
+
 
 
 
